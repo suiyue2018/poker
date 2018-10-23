@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+
+	<head>
+		<title>斗地主</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animation.css"/>
+		<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="./js/game.js"></script>
+	</head>
+
+	<body>
+		<div class="start_zzc"></div>
+		<div class="parent">
+			<div class='d1'></div>
+			<div class='d2'></div>
+			<div class='startBtn'><p>开始游戏</p></div>
+		</div>	
+		<div class="left">
+			<ul class="play_1 play">
+				<!--<li style="width: 125px; height: 175px; background: url(./img/14.png) -162px -5px;"></li>-->
+			</ul>
+			<span class="time"></span>
+			<p class="play_btn">
+				<input class="get" type="button" name="" value="抢主主">
+				<input class="cancel" type="button" name="" value="不抢">
+			</p>
+			<p class="play_btn2">
+				<input class="play_out" type="button" name="" value="出牌">
+				<input class="pass" type="button" name="" value="不出">
+				<input class="hint" type="button" name="" value="提示">
+			</p>
+		</div>
+		<div class="mid">
+			<div class="mid_top">
+				<ul class="all_poker">
+					<!--<li class="back"></li>-->
+				</ul>
+			</div>
+			<div class="mid_center">
+				<ul class="desktop">
+					<!--<li class="select" style="width: 125px; height: 175px; background: url(./img/14.png) -162px -5px;"></li>-->
+
+				</ul>
+			</div>
+			<div class="mid_end">
+				<ul class="play_2 play">
+
+					<!--<li class="select" style="width: 125px; height: 175px; background: url(./img/14.png) -162px -5px;"></li>-->
+				</ul>
+				<span class="time"></span>
+				<p class="play_btn">
+					<input class="get" type="button" name="" value="抢主主">
+					<input class="cancel" type="button" name="" value="不抢">
+				</p>
+				<p class="play_btn2">
+					<input class="play_out" type="button" name="" value="出牌">
+					<input class="pass" type="button" name="" value="不出">
+					<input class="hint" type="button" name="" value="提示">
+				</p>
+			</div>
+		</div>
+		<div class="right">
+			<ul class="play_3 play"></ul>
+			<span class="time"></span>
+			<p class="play_btn">
+				<input class="get" type="button" name="" value="抢主主">
+				<input class="cancel" type="button" name="" value="不抢">
+			</p>
+			<p class="play_btn2">
+				<input class="play_out" type="button" name="" value="出牌">
+				<input class="pass" type="button" name="" value="不出">
+				<input class="hint" type="button" name="" value="提示">
+			</p>
+		</div>
+		<!--遮罩层-->
+		<div class="zzc">
+
+		</div>
+		<!--alertMsg弹窗-->
+		<div class="msg_tc">
+			<p class="msg">无人抢地主</p>
+			<div class="btn">
+				重新开始
+			</div>
+		</div>
+		<!-- 洗牌/发牌 -->
+		<div class="box">
+			<div class="xipai"><p>洗　牌</p></div>
+			<div class="fapai"><p>发　牌</p></div>
+		</div>
+		<!-- 动画弹窗 -->
+		<div class="animation">
+			<div></div>
+		</div>
+		<!-- 聊天框 -->
+		<div class="chat">
+			<div class="chitchat">
+				<span>大家好，很高兴见到各位</span>
+				<span>怎么又断线了，网络怎么这么差啊</span>
+				<span>和你合作实在是太愉快了</span>
+				<span>快点吧，我等的花都谢了</span>
+				<span>你的牌打得也太好了</span>
+				<span>不要走，决战到天亮</span>
+				<span>
+					<input type="text" value="此房间禁止聊天">
+					<button>发送</button>
+				</span>
+			</div>
+		</div>
+		<div class="weiXin"></div>
+		<div class="alertChat"><span></span></div>
+		<!--音效-->
+		<audio src="" class="bg-music" autoplay loop></audio>
+		<audio src="" class="loop-music" autoplay loop ></audio>
+		<audio src="" class="noloop-music" autoplay></audio>
+		
+		<div class="p1_integral"></div>
+		<div class="p2_integral"></div>
+		<div class="p3_integral"></div>
+		<div class='table_bg'>
+			<table border="0">
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>初始积分</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>+/-</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>结束积分</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+			</table>
+			<div class="continue_btn">
+			继续游戏
+			</div>
+		</div>
+		
+		<div class="multiple">15</div>
+		<div class="player">
+			<div class="player1"></div>
+			<div class="player2"></div>
+			<div class="player3"></div>
+		</div>
+	</body>
+
+</html>

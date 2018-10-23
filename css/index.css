@@ -1,0 +1,751 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	cursor: url("../img/456.cur"), auto;
+	font-family: "YouYuan";
+	outline: 0;
+}
+
+body {
+	background: url('../img/111.jpg') no-repeat;
+	overflow: hidden;
+	background-size: 100%;
+}
+
+li {
+	list-style: none;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
+.left {
+	width: 20%;
+	height: 800px;
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+
+.mid {
+	width: 60%;
+	height: 800px;
+	float: left;
+}
+
+.mid_top {
+	width: 100%;
+	height: 350px;
+	float: left;
+}
+
+.mid_center {
+	width: 100%;
+	height: 200px;
+	float: left;
+	position: relative;
+	perspective: 800px;
+}
+.mid_center ul {
+	transform: rotateX(40deg);
+}
+.mid_end {
+	width: 100%;
+	height: 300px;
+	float: left;
+	position: relative;
+	z-index: 3;
+}
+
+.right {
+	width: 20%;
+	height: 800px;
+	float: right;
+	position: relative;
+	z-index: 50;
+}
+
+.all_poker {
+	width: 125px;
+	height: 175px;
+	margin: 100px auto 0px;
+	position: relative;
+	/*background: #fff;*/
+	transition: transform .5s;
+}
+
+.all_poker li {
+	position: absolute;
+}
+
+.temp_poker {
+	width: 125px;
+	height: 175px;
+	margin: 100px auto 0px;
+	position: relative;
+}
+
+.back {
+	width: 125px;
+	height: 175px;
+	background: url('../img/14.png') -87px -225px;
+	position: absolute;
+	z-index: 100;
+}
+
+.play {
+	width: 125px;
+	height: 175px;
+	margin: 160px auto 0px;
+	position: relative;
+	transition: transform 1s;
+}
+
+.play li {
+	position: absolute;
+}
+
+.play_btn,
+.play_btn2 {
+	display: none;
+	text-align: center;
+	position: absolute
+}
+
+input {
+	border: 0;
+	height: 40px;
+	width: 116px;
+	background: url(../img/9a.png) 0px 1px;
+	background-size: 120px 80px;
+	font-family: FZCuYuan-M03S;
+	font-size: 18px;
+	color: white;
+	font-weight: 100px;
+}
+
+input:hover {
+	background: url(../img/9a.png) 0px 40px;
+	background-size: 120px 80px;
+}
+
+.desktop {
+	width: 125px;
+	height: 175px;
+	position: relative;
+	margin: 10px auto;
+}
+
+.desktop li {
+	position: absolute;
+}
+
+.left p {
+	top: 50%;
+	right: -110px;
+	transform: rotate(90deg);
+}
+
+.left .play_btn2 {
+	top: 50%;
+	margin: 50px 0 0 0;
+}
+
+.right p {
+	top: 50%;
+	left: -110px;
+	transform: rotate(-90deg);
+}
+
+.right .play_btn2 {
+	top: 50%;
+	margin: 50px 0 0 0;
+}
+
+.mid_end p {
+	top: 60px;
+	left: 40%;
+}
+
+.mid_end .play_btn2 {
+	top: 70px;
+	left: 35%;
+}
+
+.play_2 .selected {
+	top: -20px;
+}
+
+.play_1 .selected {
+	right: -20px;
+}
+
+.play_3 .selected {
+	left: -20px;
+}
+
+.zzc {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #000;
+	opacity: 0.6;
+	display: none;
+	z-index: 9998;
+}
+
+.msg_tc {
+	width: 300px;
+	height: 100px;
+	line-height: 50px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -150px;
+	z-index: 9999;
+	background-color: peru;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	z-index: 9999;
+	display: none;
+}
+
+.msg_tc .btn {
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	background-color: palegoldenrod;
+	font-size: 16px;
+	color: #000000;
+	cursor: pointer;
+}
+
+.time {
+	width: 64px;
+	height: 53px;
+	line-height: 53px;
+	position: absolute;
+	background: url('../img/time1.png') no-repeat;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+	display: none;
+}
+
+.left .time{
+	top: 50%;
+	right: -100px;
+}
+.right .time {
+	top: 50%;
+	left: -100px;
+}
+.mid_end .time {
+	top: 0px;
+	left: 50%;
+	margin: 0 0 0 -32px;
+}
+/*11111111111111111111111111111111111111111111111*/
+
+.animation div {
+	z-index: 100;
+}
+
+.bomb_box {
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin: 0 0 0 -80px;
+	animation: bomb 5s;
+}
+
+.plane_box {
+	width: 400px;
+	height: 295px;
+	position: absolute;
+	right: -400px;
+	top: 50%;
+	margin: -150px 0 0 0;
+	background: url(../img/imgAnimation/feiji.png) no-repeat;
+	animation: plane 4s;
+}
+
+.rocket_box {
+	width: 100px;
+	height: 326px;
+	position: absolute;
+	bottom: -326px;
+	left: 50%;
+	margin: 0 0 0 -50px;
+	background: url(../img/imgAnimation/rocket.png) no-repeat;
+	animation: rocket 4s;
+}
+
+.shunZi_box {
+	width: 200px;
+	height: 195px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -100px 0 0 -100px;
+	background: url(../img/imgAnimation/shunZi.png) no-repeat;
+	animation: shunZi 2s;
+}
+
+.lianDui_box {
+	width: 200px;
+	height: 195px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -100px 0 0 -100px;
+	background: url(../img/imgAnimation/lianDui.png) no-repeat;
+	animation: lianDui 2s;
+}
+
+.chat {
+	width: 450px;
+	height: 400px;
+	border-radius: 18px;
+	background: rgb(0, 0, 0, 0.2);
+	position: absolute;
+	right: 100px;
+	bottom: 100px;
+	display: none;
+	z-index: 9997;
+}
+
+.chitchat {
+	width: 400px;
+	height: 350px;
+	background: #f9f0da;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	color: #8d3112;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 20px;
+}
+
+.chitchat span {
+	width: 330px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	border-bottom: 1px solid #BD4E3E;
+}
+
+.chitchat span:nth-child(6),.chitchat span:nth-child(7){
+	border: none;
+}
+
+.chitchat input {
+	width: 300px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 20px;
+	border: 0;
+	background: rgb(0, 0, 0, 0.6);
+	position: relative;
+	top: -10px;
+	cursor: default;
+}
+
+.chitchat button {
+	width: 60px;
+	height: 35px;
+	border-radius: 20px;
+	border: 0;
+	background: orange;
+	position: relative;
+	top: -63px;
+	left: 238px;
+	cursor: pointer;
+}
+
+.weiXin {
+	width: 200px;
+	height: 80px;
+	background: url(../img/imgAnimation/weiXin.png) no-repeat;
+	background-size: 100px 40px;
+	position: absolute;
+	right: 0px;
+	bottom: -24px;
+	cursor: pointer;
+	z-index: 60;
+}
+
+.alertChat {
+	width: 200px;
+	height: 160px;
+	background: url(../img/imgAnimation/alertChat.png) no-repeat;
+	position: absolute;
+	margin: 500px;
+	display: none;
+	z-index: 997;
+}
+
+.alertChat span {
+	width: 100px;
+	height: 50px;
+	color: #8d3112;
+	font-size: 20px;
+	font-weight: block;
+	display: block;
+	margin: 30px auto;
+	position: relative;
+}
+
+.p1_integral,
+.p2_integral,
+.p3_integral {
+	height: 30px;
+	width: 120px;
+	/*border:1px solid red;*/
+	line-height: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	border-radius: 50px;
+	background: rgb(0, 0, 0, 0.3);
+	background-size: 120px 60px;
+	display: none;
+	z-index: 90;
+}
+
+.p1_integral {
+	position: absolute;
+	top: 200px;
+	left: 10px;
+}
+
+.p1_integral::before {
+	width: 35px;
+	height: 35px;
+	content: " ";
+	display: block;
+	position: absolute;
+	left: -10px;
+	background: url(../img/欢乐豆.png) 0 0;
+	background-size: 35px 35px;
+}
+
+.p2_integral {
+	position: absolute;
+	bottom: 10px;
+	left: 48%;
+}
+
+.p2_integral::before {
+	width: 35px;
+	height: 35px;
+	content: " ";
+	display: block;
+	position: absolute;
+	left: -10px;
+	background: url(../img/欢乐豆.png) 0 0;
+	background-size: 35px 35px;
+}
+
+.p2_integral::after {
+	width: 35px;
+	height: 35px;
+	content: " ";
+	display: block;
+	position: absolute;
+	right: -15px;
+	top: -3px;
+	background: url(../img/13a.png) 0 0;
+	background-size: 35px 35px;
+	cursor: pointer;
+}
+
+.p3_integral {
+	position: absolute;
+	top: 200px;
+	right: 0px;
+}
+
+.p3_integral::before {
+	width: 35px;
+	height: 35px;
+	content: " ";
+	display: block;
+	position: absolute;
+	left: -10px;
+	background: url(../img/欢乐豆.png) 0 0;
+	background-size: 35px 35px;
+}
+
+.table_bg {
+	height: 600px;
+	width: 500px;
+	background: url(../img/jiesuan.png) -12px -32px;
+	background-size: 520px 680px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	z-index: 9999;
+	display: none;
+}
+
+table {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -40.15px 0 0 -210px;
+	color: #961;
+	display: none;
+	z-index: 9999;
+	border: black;
+	font-weight: bold;
+}
+
+table td {
+	height: 50px;
+	width: 100px;
+	text-align: center
+}
+
+.msg_tc {
+	width: 500px;
+	height: 100px;
+	line-height: 50px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -50px 0 0 -250px;
+	z-index: 9999;
+	background-color: peru;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	z-index: 9999;
+	display: none;
+	border-radius: 20px;
+	border: 2px double #A94536;
+}
+
+.msg_tc .btn {
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	background-color: palegoldenrod;
+	font-size: 16px;
+	color: #000000;
+	cursor: pointer;
+	border-radius: 20px;
+	border: 2px solid #A94536;
+	
+}
+
+.continue_btn {
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	position: absolute;
+	top: 73%;
+	left: 31%;
+	margin: 50px 0 0 -50px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 16px;
+	font-weight: bolder;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+	z-index: 9999;
+}
+
+.multiple {
+	height: 30px;
+	width: 150px;
+	font-weight: bold;
+	color: #ffe28e;
+	position: fixed;
+	right: 10%;
+	bottom: 20px;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 30px;
+	background: rgb(0, 0, 0, 0.4);
+	display: none;
+}
+
+.multiple::before {
+	width: 40px;
+	height: 40px;
+	content: " ";
+	display: block;
+	background: url(../img/11a.png) 0 -1px;
+	background-size: 40px 40px;
+	position: absolute;
+	left: -15px;
+	top: -5px;
+}
+
+.player1 {
+	height: 200px;
+	width: 200px;
+	background: url(../img/qplay0.png);
+	background-size: 220px 220px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	z-index: 0;
+}
+
+.player2 {
+	height: 200px;
+	width: 200px;
+	background: url(../img/qplay1.png);
+	background-size: 220px 220px;
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+	z-index: 0;
+}
+
+.player3 {
+	height: 200px;
+	width: 200px;
+	background: url(../img/qplay2.png);
+	background-size: 220px 220px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+	z-index: 0;
+}
+
+.start_zzc {
+	height: 1080px;
+	width: 1920px;
+	background: url(../img/startbga.jpg)50% 20% no-repeat, white;
+	background-size: 800px 800px;
+	position: absolute;
+	z-index: 9999;
+	display: none;
+}
+.parent {
+	display: none;	
+}
+
+
+.d1 {
+	width: 100%;
+	height: 1080px;
+	background: gray;
+	position: absolute;
+	left: 0;
+	background: url(../img/bgleft.png) 0 -12px;
+	z-index: 2000;
+}
+
+.d2 {
+	width: 100%;
+	height: 1080px;
+	background: gray;
+	position: absolute;
+	right: 0;
+	background: url(../img/bgright.png) 0 -12px;
+	z-index: 2000;
+}
+
+.parent .startBtn {
+	width: 342px;
+	height: 92px;
+	top: 80%;
+	left: 40%;
+	z-index: 2000;
+	position: absolute;
+	text-align: center;
+	line-height: 92px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #d7e5d9;
+	font-family: '微软雅黑';
+	cursor: pointer;
+	background: url('../img/login.png') no-repeat -9px -5px;
+}
+
+.parent .startBtn:hover {
+	width: 342px;
+	height: 92px;
+	border: 0;
+	background: url('../img/login.png') no-repeat -359px 2px;
+	color: #bed6e2;
+}
+
+.parent .startBtn p {
+	background-image: -webkit-linear-gradient(left, #3498db 0%, #fff 25%, #3498db 50%, #fff 75%, #3498db 100%);
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-size: 200% 100%;
+	animation: masked-animation 2s infinite linear
+}
+
+@keyframes masked-animation {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -100% 0;
+	}
+}
+
+.xipai, .fapai {
+	width: 342px;
+	height: 92px;
+	top: 50%;
+	left: 50%;
+	margin: -46px 0 0 -171px;
+	position: absolute;
+	text-align: center;
+	line-height: 92px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #d7e5d9;
+	font-family: '微软雅黑';
+	cursor: pointer;
+	background: url('../img/login.png') no-repeat -9px -5px;
+}
+.fapai {
+	display: none;
+}
+.xipai:hover ,.fapai:hover {
+	width: 342px;
+	height: 92px;
+	border: 0;
+	background: url('../img/login.png') no-repeat -359px 2px;
+	color: #bed6e2;
+}
+
+.xipai p,.fapai p{
+	background-image: -webkit-linear-gradient(left, #3498db 0%, #fff 25%, #3498db 50%, #fff 75%, #3498db 100%);
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-size: 200% 100%;
+	animation: masked-animation 2s infinite linear
+}
+/*.box {
+	width: 243px;
+	height: 165px;
+	position: relative;
+	/* border: 1px solid red; */
+	top: 350px;
+	left: 837px;
+}*/
